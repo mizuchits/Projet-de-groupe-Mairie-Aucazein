@@ -1,6 +1,8 @@
 const menuBurger = document.getElementById('menu-burger');
 const menu = document.getElementById('menu');
 
+
+menu.classList.remove('close');
 menuBurger.addEventListener('click', () => {
   menu.classList.toggle('hidden');
 });
