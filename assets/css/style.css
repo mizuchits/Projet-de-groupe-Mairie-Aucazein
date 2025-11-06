@@ -287,6 +287,9 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
+  .w-\[35\%\] {
+    width: 35%;
+  }
   .w-\[40\%\] {
     width: 40%;
   }
