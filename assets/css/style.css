@@ -698,42 +698,12 @@
       }
     }
   }
-  .hover\:bg-black\/10 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #000 10%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
-        }
-      }
-    }
-  }
   .hover\:bg-black\/15 {
     &:hover {
       @media (hover: hover) {
         background-color: color-mix(in srgb, #000 15%, transparent);
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-black) 15%, transparent);
-        }
-      }
-    }
-  }
-  .hover\:bg-black\/30 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #000 30%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
-        }
-      }
-    }
-  }
-  .hover\:bg-black\/50 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #000 50%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
         }
       }
     }
@@ -759,14 +729,31 @@
       }
     }
   }
-  .max-sm\:start-3 {
-    @media (width < 40rem) {
-      inset-inline-start: calc(var(--spacing) * 3);
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
     }
   }
-  .max-sm\:end-3 {
-    @media (width < 40rem) {
-      inset-inline-end: calc(var(--spacing) * 3);
+  .sm\:container {
+    @media (width >= 40rem) {
+      width: 100%;
+      @media (width >= 40rem) {
+        max-width: 40rem;
+      }
+      @media (width >= 48rem) {
+        max-width: 48rem;
+      }
+      @media (width >= 64rem) {
+        max-width: 64rem;
+      }
+      @media (width >= 80rem) {
+        max-width: 80rem;
+      }
+      @media (width >= 96rem) {
+        max-width: 96rem;
+      }
     }
   }
   .sm\:p-4 {
