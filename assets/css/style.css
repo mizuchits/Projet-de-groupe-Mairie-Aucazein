@@ -278,6 +278,9 @@
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-\[40\%\] {
     width: 40%;
   }
@@ -435,6 +438,9 @@
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
