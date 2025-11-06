@@ -335,6 +335,10 @@
     width: calc(var(--spacing) * 9);
     height: calc(var(--spacing) * 9);
   }
+  .size-9\.5 {
+    width: calc(var(--spacing) * 9.5);
+    height: calc(var(--spacing) * 9.5);
+  }
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
@@ -343,9 +347,6 @@
   }
   .h-80 {
     height: calc(var(--spacing) * 80);
-  }
-  .h-\[20\%\] {
-    height: 20%;
   }
   .h-full {
     height: 100%;
@@ -385,9 +386,6 @@
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
-  }
-  .w-\[35\%\] {
-    width: 35%;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -531,6 +529,9 @@
   }
   .bg-\[url\(\.\.\/img\/mairie\.png\)\] {
     background-image: url(../img/mairie.png);
+  }
+  .\[mask-image\:_linear-gradient\(to_right\,transparent_0\,_black_128px\,_black_calc\(100\%-128px\)\,transparent_100\%\)\] {
+    mask-image:  linear-gradient(to right,transparent 0, black 128px, black calc(100% - 128px),transparent 100%);
   }
   .bg-cover {
     background-size: cover;
@@ -769,9 +770,10 @@
       inset-inline-end: calc(var(--spacing) * 3);
     }
   }
-  .sm\:p-4 {
+  .sm\:text-4xl {
     @media (width >= 40rem) {
-      padding: calc(var(--spacing) * 4);
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .md\:container {
@@ -829,11 +831,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-4 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
   .md\:flex-col {
     @media (width >= 48rem) {
       flex-direction: column;
@@ -854,6 +851,11 @@
       justify-content: space-between;
     }
   }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
+    }
+  }
   .md\:gap-10 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 10);
@@ -862,11 +864,6 @@
   .md\:gap-15 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 15);
-    }
-  }
-  .md\:rounded-2xl {
-    @media (width >= 48rem) {
-      border-radius: var(--radius-2xl);
     }
   }
   .md\:rounded-lg {
@@ -883,11 +880,6 @@
   .md\:bg-blue-primary {
     @media (width >= 48rem) {
       background-color: var(--color-blue-primary);
-    }
-  }
-  .md\:p-4 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 4);
     }
   }
   .md\:text-white {
@@ -917,6 +909,16 @@
   .lg\:justify-start {
     @media (width >= 64rem) {
       justify-content: flex-start;
+    }
+  }
+  .\[\&_img\]\:max-w-none {
+    & img {
+      max-width: none;
+    }
+  }
+  .\[\&_li\]\:mx-8 {
+    & li {
+      margin-inline: calc(var(--spacing) * 8);
     }
   }
 }
