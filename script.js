@@ -3,6 +3,7 @@ const menu = document.getElementById('menu');
 
 menuBurger.addEventListener('click', () => {
 menu.classList.toggle('hidden');
+menu.default('hidden');
 });
 
 
