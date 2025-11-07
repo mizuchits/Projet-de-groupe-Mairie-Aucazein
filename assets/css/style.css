@@ -314,11 +314,23 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
+  .w-\[20\%\] {
+    width: 20%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[40\%\] {
     width: 40%;
   }
   .w-\[50\%\] {
     width: 50%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-full {
     width: 100%;
@@ -343,6 +355,9 @@
   }
   .resize {
     resize: both;
+  }
+  .break-after-all {
+    break-after: all;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -456,11 +471,23 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
@@ -479,6 +506,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .font-figtree {
     font-family: var(--font-figtree);
@@ -605,6 +635,19 @@
       display: none;
     }
   }
+  .md\:h-100 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 100);
+    }
+  }
+  .md\:h-150 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 150);
+    }
+  }
+  .md\:h-200 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 200);
   .md\:w-5xl {
     @media (width >= 48rem) {
       width: var(--container-5xl);
@@ -615,9 +658,24 @@
       width: 50%;
     }
   }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
+    }
+  }
+  .md\:w-\[100\%\] {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
   .md\:w-auto {
     @media (width >= 48rem) {
       width: auto;
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
     }
   }
   .md\:max-w-4xl {
@@ -640,9 +698,19 @@
       align-items: center;
     }
   }
+  .md\:justify-around {
+    @media (width >= 48rem) {
+      justify-content: space-around;
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
     }
   }
   .md\:gap-10 {
