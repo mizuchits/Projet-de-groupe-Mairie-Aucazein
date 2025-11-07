@@ -32,5 +32,3 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
-
-console.log('matthias a rien fait')
