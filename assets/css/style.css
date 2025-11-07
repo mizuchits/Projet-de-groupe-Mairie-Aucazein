@@ -283,6 +283,9 @@
   .w-2xl {
     width: var(--container-2xl);
   }
+  .w-5xl {
+    width: var(--container-5xl);
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
