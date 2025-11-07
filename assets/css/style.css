@@ -280,6 +280,9 @@
   .min-h-\[50vh\] {
     min-height: 50vh;
   }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
